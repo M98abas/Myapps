@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>الصفحة الرئيسية</title>
+	<link rel="stylesheet" href="../assets/css/library.css">
+</head>
+<body>
+
+	<header class="topbar">
+		<nav class="navbar">
+				<a href="Home.html" title="Go Back">
+					<img src="../assets/images/back sign.png" alt="Go back" style=" width:110px; height: 110px ;border-radius: 250px;float: left;">
+				</a>
+				<a href="index.html" title="Home">
+					<img src="../assets/images/labrary.jpg" alt="app icon" style=" width:110px; height: 110px ;border-radius: 55px;float: right;">
+				</a>
+				<div>
+					<div class="hello">  المكتبة </div>	
+				</div>							
+		</nav>
+			
+	</header>
+	
+<!-- Mahmoud Abbas -->
+	<br>
+	<br>
+	<div class="contener">
+		<div class="secontener"> <ul style="list-style: none;">
+			<li>
+				<a class="button" href="add.html" title="for add's site" style="float: left;"><span>  كتاب جديد </span></a>
+			</li>
+			<li>
+				<a class="button" href="delete.html" title="del or update" style="float: left;" id="delete">
+				<span> Delete</span>
+				</a> <!-- here you must add the DB --></li>
+
+		</ul>
+			
+
+		</div>
+
+			<div class="table-inside-me" style="float: right;">	
+		        <div class="table-responsive m-t-40">
+		            <table id="myTable" class="table table-bordered table-striped" style="direction: rtl">
+		                <thead>
+		                    <tr>
+		                        <th width="100" class="nuber">رقم الكتاب</th>
+		                         <th width="100"><i class="fa-book"></i >اسم الكتاب </th>
+		                        <th width="150"><i class="fa fa-credit-card"></i>اسم المؤلف </th>
+		                        <th width="150"><i class=""></i>صنف الكتاب </th>
+		                        <th width="150"><i class="fa-location-arrow"></i>مكان الكتاب </th>
+		                        <th width="150"><i class="fa-calendar-check-o"></i> التاريخ</th>
+		                        <th width="150"><i class=" fa-sticky-note-o"></i> الملاحظات</th>
+
+		                    </tr>
+		                </thead>
+		                <tbody id="tbdy">
+
+		                </tbody>
+		            </table>
+		        </div>
+			</div>
+		</div>
+
+		
+		
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- <footer>
+		<button class="btn_me" >
+		<a class="dt-button buttons-pdf buttons-html5 btn btn-primary mr-1" tabindex="0" aria-controls="myTable" href="#"><span>PDF</span></a>
+		</button>
+</footer> -->
+<script src="library.js"></script>
+</body>
+</html>

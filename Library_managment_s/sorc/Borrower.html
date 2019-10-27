@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>معلومات المستعير</title>
+	<link rel="stylesheet" href="../assets/css/Borro.css">
+	<script rel="stylesheet"href="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script rel="stylesheet"href="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script rel="stylesheet"href="https://cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+    <script rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script rel="stylesheet"href="https://cdn.datatables.net/buttons/1.5.6/js/buttons.html5.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		
+
+
+</head>
+	<body>
+		<header class="topbar">
+			<nav class="navbar">
+					<a href="Home.html" title="Go Back">
+						<img src="../assets/images/back sign.png" alt="Go back" style=" width:110px; height: 110px ;border-radius: 250px;float: left;">
+					</a>
+					<a href="index.html" title="Home">
+						<img src="../assets/images/labrary.jpg" alt="app icon" style=" width:110px; height: 110px ;border-radius: 55px;float: right;">
+					</a>
+					<div>
+						<div class="hello">  المستعيرين </div>	
+					</div>							
+			</nav>
+		</header>
+
+		<br>
+		<br>
+		<div class="contener">
+			<div class="secontener"> <ul style="list-style: none;">
+				<li>
+					<a class="button" href="add_borro.html" title="for add's site" style="float: left;"><span>  اضافة مستعير </span></a>
+				</li>
+				<li>
+					<a class="button" href="Borrower.html" title="Reload" style="float: left;" id="btn-load">
+					<span> Reload</span>
+					</a> <!-- here you must add the DB -->
+
+				</li>
+				<li>
+					<a class="button" href="Brdel.html" title="del or update" style="float: left;" id="delete">
+					<span> Delete</span>
+					</a> <!-- here you must add the DB --></li>
+			</ul>
+				
+
+			</div>
+				<div class="table-inside-me" style="float: right;">	
+			        <div class="table-responsive m-t-40">
+			            <table id="myTable" class="table table-bordered table-striped" style="direction: rtl">
+			                <thead>
+			                    <tr>
+					                <th width="100" class="nuber" id="id">رقم المستعير</th>
+					                 <th width="100"><i class="fa-book"></i >اسم المستعير </th>
+					                <th width="150"><i class="fa fa-credit-card"></i>القسم </th>
+					                <th width="150"><i class="fa fa-credit-card"></i>رقم الهاتف </th>
+					                <th width="150"><i class=""></i> اسم الكتاب </th>
+					                <th width="150"><i class="fa-calendar-check-o"></i>  تاريخ الاستلام</th>
+					                <th width="150"><i class=" fa-sticky-note-o"></i>تاريخ الارجاع  </th>
+					                <th width="150" style="border: none"><i class=" fa-sticky-note-o"></i> التوقيع </th>
+
+			                    </tr>
+			                </thead>
+			                <tbody id="tbdy">
+
+			                </tbody>
+			            </table>
+			        </div>
+				</div>
+			</div>
+
+	<!-- <script src="add_borro.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.6/css/buttons.dataTables.min.css">
+		<script src="Borrower.js"></script>
+
+	</body>
+</html>

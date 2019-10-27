@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>اضافة مستعير جديدي</title>
+	<link rel="stylesheet" href="../assets/css/add.css">
+</head>
+<body>
+
+	<header class="topbar" style="text-align: center;">
+		<nav class="navbar">
+				<a href="Borrower.html" title="Go Back">
+					<img src="../assets/images/back sign.png" alt="Go back" style=" width:110px; height: 110px ;border-radius: 250px;float: left;">
+				</a>
+				<a href="index.html" title="Home">
+					<img src="../assets/images/labrary.jpg" alt="app icon" style=" width:110px; height: 110px ;border-radius: 55px;float: right;">
+				</a>
+				<div>
+					<div class="hello" style="font-size: 35px; text-align: center; margin-left: 650px;">  استعارة كتاب </div>	
+				</div>							
+		</nav>
+		<div style="margin-top: 40px; margin-right: 50px;">
+			<input type="text" name="تاريخ اليوم" placeholder="تاريخ اليوم  yy/mm/dd" id="date_write">
+		</div>
+	</header>
+	
+<!-- Mahmoud Abbas -->
+	<br>
+
+	<h2 style="text-align: center;">اضف عنصر جديد</h2>
+
+	<div class="contener" style="text-align: center; margin-left: 850px; margin-top: 50px">
+		<div class="second-cont" style="text-align: center;">
+			<div class="main-info">
+				<p class="number">رقم المستعير</p>
+				<input type="text" name="number" placeholder="رقم المستعير" id="number_book">
+			</div>
+			<div class="sec_info">
+				<p class="name">اسم المستعير</p>
+				<input type="text" name="Name Book" id="name_book" placeholder="اسم المستعير">
+			</div>
+			<div class="third_info">
+				<p class="auth">قسم المستعير</p>
+				<input type="text" name="القسم" placeholder="القسم" id="Author_book">
+			</div>
+			<div class="fourth">
+				<p class="date_book">رقم الهاتف المستعير</p>
+				<input type="text" name="رقم الهاتف" placeholder="رقم الهاتف" id="date_Book">
+			</div class="fifth">
+			<div class="copying">
+				<p class="copy">اسم الكتاب</p>
+				<input type="text" name="اسم الكتاب" placeholder="اسم الكتاب" id="copy" title="معلومات حول الكتاب مثلا اسم الكتاب او رقم الكتاب">
+			</div>
+			<div class="sixth">
+				<p class="getit"> تاريخ اﻻستلام </p>
+				<input type="text" name="تاريخ اﻻستلام" placeholder="yy/mm/dd" id="get_book">
+			</div>
+			<div class="how-get-it">
+				<p class="type">تاريخ الارجاع</p>	
+				<input type="text" name="تاريخ الارجاع" id="typeing" placeholder="تاريخ الارجاع">
+			</div>
+			<div class="place">
+				<p class="pla">التوقيع</p>
+				<input type="text" name="التوقيع" placeholder="التوقيع" id="place_book">
+			</div>
+			<!-- <div style="margin-top: 3px; margin-left: 30px">
+				
+			</div>	 -->
+			<button type="button" style="font-size: 25px; width: 150px; height: 50px; margin-top: 5px" id="btn-save">حفظ</button>	
+		</div>		
+	</div>
+
+	<script src="add_borro.js"></script>
+</body>
+</html>
