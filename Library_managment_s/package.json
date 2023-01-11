@@ -6,7 +6,7 @@
   "dependencies": {
     "electron": "^7.0.0",
     "jquery": "^3.4.1",
-    "knex": "^0.19.4",
+    "knex": "^2.4.0",
     "sequelize-offline": "^4.0.1",
     "serializr": "^1.5.3",
     "sqlite3": "^4.1.0"
